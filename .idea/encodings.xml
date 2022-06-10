@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/src/DAO/yx/AdminDAO.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/DAO/zyx/SchoolInfoDAO.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/DAO/zyx/StudentDAO.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/UI/yx/MainFrameForAdmin.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/UI/zzy/LoginFrame.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/UI/zzy/ModifyAdminInfoDialog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/UI/zzy/ModifySchoolInfoDialog.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

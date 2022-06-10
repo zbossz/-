@@ -1,0 +1,166 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "用户注册界面"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :p:96:p, comp backToMainHome:::p::p, space :::x, comp findButton:::p::p, space :p:69:p, comp variableButton:::p:106:p, space :p:129:p}, seq t {space :0:20:x, par l {comp schoollabel::t:p:79:p, comp passwordlabel::t:p:79:p, comp schoolLevellabel::t:p:79:p, comp homelabel::t:p:79:p, comp dreamschoolTypelabel::t:p:79:p, comp acoountlabel::t:p:79:p, comp dreamschoolNamelabel::t:p:79:p, comp dreamschoolLoclabel::t:p:79:p}, space s:::p, par l {seq l {space :85:85:p, comp label9:::p:251:p}, seq l {par t:::p {comp label1::::108:x, comp label2::::108:x, comp label3::::108:x, comp label4::::108:x, comp label5::::108:x, comp label6::::108:x, comp label7::::108:x, comp label8::::108:x}, par l {par l:l {par l:l {par l:l {par l:l {par l:l {seq l {space s:::p, comp dreamSchoolNameField:::p:264:p}, seq t {space :p:18:p, comp dreamSchoolPlaceField:::p:264:p}}, seq t {space :p:18:p, comp dreamSchoolLevelField:::p:264:p}}, seq t {space :p:18:p, comp homeField:::p:264:p}}, seq t {space :p:18:p, comp schoolLevelField:::p:264:p}}, seq t {space :p:18:p, comp schoolField:::p:264:p}}, seq t {space :p:18:p, par l {comp studentNameTextField:::p:264:p, seq {comp studentpasswordField:::p:264:p, space s:::p, comp showPasswordRadioButton:::p::p}}}}}}, space :p:69:p}, seq t {space ::20:x, comp tips:::p:618:p, space ::26:x}}"
+					"$verticalGroup": "par l {seq l {space :p:15:p, comp label9:::p::p, par l {seq {par l {seq l {space :16:16:p, par b {comp label1::b:p:29:p, comp studentNameTextField::b:p::p}, space :p:14:p, par l {comp passwordlabel:::p:29:p, seq l {space :1:1:p, par b {comp studentpasswordField::b:p::p, comp showPasswordRadioButton::b:p::p}}, comp label2::l:p:29:p}, space :p:12:p, par l {comp schoolField:::p::p, comp schoollabel:::p:29:p, comp label3::l:p:29:p}, space :::p, par l {comp schoolLevelField:::p::p, comp schoolLevellabel:::p:29:p, comp label4::l:p:29:p}, space :p:12:p, par l {comp homeField:::p::p, comp homelabel:::p:29:p, comp label5::l:p:29:p}, space :p:12:p, par l {comp dreamSchoolLevelField:::p::p, comp dreamschoolTypelabel:::p:29:p, comp label6::l:p:29:p}}, seq l {space s:::p, comp acoountlabel:::p:29:p}}, space :p:12:p, par l {comp dreamSchoolPlaceField:::p::p, comp label7:::p:29:p}}, seq t {space :::p, comp dreamschoolLoclabel:::p:29:p}}, space :p:8:p, par l {comp dreamSchoolNameField:::p::p, comp dreamschoolNamelabel:::p:29:p, comp label8::l:p:29:p}, space s:::p, comp tips:::p:21:p, space :::p, par b {comp backToMainHome::b:p::p, comp variableButton::b:p::p, comp findButton::b:p::p}, space ::30:x}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "用户名"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "密码"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "本科院校"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "本科院校级别"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "籍贯"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "志愿学校类型"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "志愿学校地址"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "志愿学校名称"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "欢迎进入注册界面"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 22 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "studentNameTextField"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "schoolField"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "schoolLevelField"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "homeField"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "dreamSchoolLevelField"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "dreamSchoolPlaceField"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "dreamSchoolNameField"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "studentpasswordField"
+						"font": new java.awt.Font( "Monospaced", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButton" ) {
+						name: "showPasswordRadioButton"
+						"text": "显示密码"
+						addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "showPasswordRadioButtonStateChanged", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "backToMainHome"
+						"text": "返回登录界面"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backToMainHome", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "variableButton"
+						"text": "注册"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "variable", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "tips"
+						"horizontalAlignment": 0
+						"foreground": sfield java.awt.Color red
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "dreamschoolNamelabel"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "passwordlabel"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "schoollabel"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "schoolLevellabel"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "homelabel"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "dreamschoolTypelabel"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "acoountlabel"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "dreamschoolLoclabel"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "findButton"
+						"text": "查找"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "find", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 690, 555 )
+		} )
+	}
+}

@@ -1,0 +1,116 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "考研信息查询系统"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :::p, comp label4::::530:x, space :p:88:p}, seq t {space :0:152:x, par t {par l:t {comp label3:::p:338:p, par t:l::p {seq l {comp label2:::p:66:p, space :::p, comp passwordField:::::x}, seq {comp label1:::p:66:p, space :::p, comp AccountTextField:::p:236:p}}}, seq t {comp rememberAccountcheckBox:::p::p, space :p:39:p, comp rememberPasswordcheckBox:::p::p, space s:::p, comp agreeMent:::p:132:p, space :p:12:p}}, space :p:129:p}, seq {space :::x, comp label5:::p:180:p, space ::437:x}, seq l {space :p:183:p, comp registerButton:::p::p, space :p:109:p, comp loginButton:::p:88:p, space :0:166:x}, seq l {space :p:198:p, comp loginPrompt:::p:245:p, space ::181:x}}"
+					"$verticalGroup": "par l {seq t {space :::p, comp label3:::p:40:p, space u:::p, par b {comp label1::b:p:41:p, comp AccountTextField::b:p:41:p}, space :p:31:p, par b {comp label2::b:p:41:p, comp passwordField::b:p:45:p}, space ::26:x, par t {seq {comp label4:::p::p, space s:::p, comp label5:::p::p}, par b {comp rememberAccountcheckBox::b:p::p, comp rememberPasswordcheckBox::b:p::p, comp agreeMent::b:p::p}}, space s:::p, comp loginPrompt:::p:31:p, space u:::p, par b {comp registerButton::b:p::p, comp loginButton::b:::x}, space :p:47:p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "loginButton"
+						"text": "登入"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+						auxiliary() {
+							"JavaCodeGenerator.variableName": "loginButton"
+						}
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "loginButtonMouseClicked", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "registerButton"
+						"text": "注册"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 20 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "register", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "AccountTextField"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 18 )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "passwordField"
+						"font": new java.awt.Font( "Monospaced", 0, 18 )
+						auxiliary() {
+							"JavaCodeGenerator.variableName": "passwordField"
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+						addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "passwordFieldKeyReleased", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "agreeMent"
+						"text": "同意用户协议"
+						"horizontalAlignment": 0
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+						addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "agreeMentStateChanged", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "账户："
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 18 )
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "密码："
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 18 )
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "欢迎进入登录界面"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 24 )
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsLabel" ) {
+						name: "label4"
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "rememberPasswordcheckBox"
+						"text": "记住密码"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "rememberAccountcheckBox"
+						"text": "记住账户"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "loginPrompt"
+						"horizontalAlignment": 0
+						"foreground": sfield java.awt.Color red
+						auxiliary() {
+							"JavaCodeGenerator.variableName": "loginPrompt"
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 650, 420 )
+		} )
+	}
+}

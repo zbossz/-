@@ -1,0 +1,142 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "修改学校列表"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:132:p, comp backToMainFramebutton:::p::p, space ::89:x, comp findButton:::p::p, space :p:74:p, comp variableButton:::p::p, space :p:150:p}, seq {par l {seq {space :p:144:p, par l {seq l {comp label9:::p:87:p, space :39:39:p, comp schoolIdtextField:::p:264:p}, seq l {par l {comp label1::l:p:87:p, comp label2::l:p:87:p}, space :p:39:p, par l {comp schoolLocTextField:::p:264:p, comp schoolNametextField:::p:264:p, comp schoolTypetextField::l:p:264:p, comp recuitNumbertextField::l:p:264:p, comp englishTypetextField::l:p:264:p, comp mathTypetextField::l:p:264:p, comp politicsTypetextField::l:p:264:p, comp preProfessionalCoursesTextField::l:p:264:p, comp scrollPane1::l:p:264:p}}}}, seq l {space :p:146:p, par l {comp label3::l:p:87:p, comp label11::l:p:87:p, comp label8::l:p:95:p, comp label7::l:p:95:p, comp label6::l:p::p, comp label5::l:p:96:p, comp label4::l:p:96:p}}, seq l {space :p:97:p, comp tips:::p:487:p}}, space ::115:x}}"
+					"$verticalGroup": "par l {seq l {space :p:24:p, par l {comp label9:::p:29:p, comp schoolIdtextField:::p::p}, space :6:6:p, par l {comp label1:::p:29:p, comp schoolNametextField:::p::p}, space :12:12:p, par l {comp label2:::p:29:p, comp schoolLocTextField:::p::p}, space u:::p, par b {comp label11::b:p:29:p, comp schoolTypetextField::b:p::p}, space :::x, par b {comp label3::b:p:29:p, comp recuitNumbertextField::b:p::p}, space :p:12:p, par b {comp englishTypetextField::b:p::p, comp label4::b:p:29:p}, space :p:12:p, par b {comp mathTypetextField::b:p::p, comp label5::b:p:29:p}, space :p:12:p, par b {comp politicsTypetextField::b:p::p, comp label6::b:p:29:p}, space :p:12:p, par b {comp preProfessionalCoursesTextField::b:p::p, comp label7::b:p:29:p}, par l {seq {space s:::p, comp scrollPane1:::p:44:p}, seq {space :p:12:p, comp label8:::p:29:p}}, space :::p, comp tips:::p:29:p, space :::p, par b {comp backToMainFramebutton::b:p::p, comp variableButton::b:p::p, comp findButton::b:p::p}, space :p:26:p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "学校名称"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "学校地址"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "招生人数"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "英语考试类别"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "数学考试类别"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "政治考试类别"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "初试专业课"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": "复试专业课"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "variableButton"
+						"text": "修改信息"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "variable", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "schoolNametextField"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "recuitNumbertextField"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "englishTypetextField"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "mathTypetextField"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "politicsTypetextField"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "preProfessionalCoursesTextField"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "backToMainFramebutton"
+						"text": "返回主菜单"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backToMainFrame", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": "学校ID"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "schoolIdtextField"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "tips"
+						"foreground": sfield java.awt.Color red
+						"horizontalAlignment": 0
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "reProfessionalCoursestextArea"
+							"rows": 3
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "schoolLocTextField"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"text": "学校类别"
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "schoolTypetextField"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "findButton"
+						"text": "查找"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "find", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 725, 580 )
+		} )
+	}
+}

@@ -1,0 +1,262 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "管理员系统"
+			auxiliary() {
+				"JavaCodeGenerator.variableModifiers": 1
+			}
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp label1::::765:x, space :::p}}"
+					"$verticalGroup": "par l {seq t {space ::156:x, comp label1:::p:176:p, space :p:122:p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "欢迎"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 28 )
+						"horizontalAlignment": 0
+						auxiliary() {
+							"JavaCodeGenerator.variableName": "adminMainLabel"
+						}
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "管理员信息"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 18 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "viewCurrrentAdminInfo"
+						"text": "查看当前管理员信息"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewCurrrentAdminInfo", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "viewAllAdminInfo"
+						"text": "查看所有管理员信息"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewAllAdminInfo", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "viewSelectedAdminInfo"
+						"text": "查看指定管理员信息"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewSelectedAdminInfo", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "modifyCurrentAdminInfo"
+						"text": "修改当前管理员信息"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "modifyCurrentAdminInfo", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "addAminInfoItem"
+						"text": "增加管理员信息"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addAminInfoItem", true ) )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu7"
+						"text": "高危选项"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "delAdminItem"
+							"text": "删除特定管理员信息"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delAdminItem", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "quitSystem"
+							"text": "停止系统服务"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "quitSystem", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "DelCurrentAdmin"
+						"text": "注销当前管理员账户"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "DelCurrentAdmin", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "quitLogin"
+						"text": "退出登录"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "quitLogin", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "院校修改"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 18 )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu8"
+						"text": "增加/删除/修改院校信息"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "addSchoolInfoMenu"
+							"text": "增加院校"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addSchoolInfoMenu", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "delSchoolInfoMenu"
+							"text": "删除院校"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delSchoolInfoMenu", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "modifySchoolInfoMenu"
+							"text": "修改院校"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "modifySchoolInfoMenu", true ) )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu13"
+						"text": "增加/删除/修改院校列表"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "addSchoolListMenu"
+							"text": "增加院校"
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addSchoolListMenu", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "delSchoolListMenu"
+							"text": "删除院校"
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delSchoolListMenu", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "modifySchoolListMenu"
+							"text": "修改院校"
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "modifySchoolListMenu", true ) )
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "查询院校"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 18 )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu9"
+						"text": "按地区查询"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "ViewSchoolListByAnHui"
+							"text": "安徽"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListByAnHui", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "ViewSchoolListByJiangSu"
+							"text": "江苏"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListByJiangSu", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "ViewSchoolListByShangHai"
+							"text": "上海"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListByShangHai", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "ViewSchoolListByGuangDong"
+							"text": "广东"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListByGuangDong", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "ViewSchoolListByGuiZhou"
+							"text": "贵州"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListByGuiZhou", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "ViewSchoolListBySiChuan"
+							"text": "四川"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListBySiChuan", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "ViewSchoolListByJiangXi"
+							"text": "江西"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListByJiangXi", true ) )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu10"
+						"text": "按类别查询"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "ViewSchoolListBy985"
+							"text": "查询985院校"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListBy985", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "ViewSchoolListBy211"
+							"text": "查询211院校"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListBy211", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "ViewSchoolListByNormal"
+							"text": "查询普本院校"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListByNormal", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "ViewSchoolListBySelf"
+						"text": "查询指定院校信息"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSchoolListBySelf", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu6"
+					"text": "操作用户信息"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 18 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "ViewAllUser"
+						"text": "查询所有用户信息"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewAllUser", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "ViewSelectedUser"
+						"text": "根据用户名查询"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ViewSelectedUser", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "DelUser"
+						"text": "删除用户信息"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "DelUser", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 5 )
+			"size": new java.awt.Dimension( 815, 540 )
+		} )
+	}
+}

@@ -1,0 +1,98 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "管理员查询系统"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :::x, par l {seq l {comp choicecomboBox:::p::p, space s:::p, comp searchTextArea:::p:390:p, space s:::p, comp searchbutton:::p::p, space :6:6:p, comp clearButton:::p::p}, seq l {space :110:110:p, comp label1:::p:457:p, space :63:63:p, comp backToMainFrameButton:::p::p}}, space :p:37:p}, seq t {space :::p, comp scrollPane:::::x, space :::p}}"
+					"$verticalGroup": "par l {seq t {space :p:37:p, par l {comp choicecomboBox:::p::p, comp searchbutton:::p::p, comp clearButton:::p::p, comp searchTextArea::t::33:x}, space s:::p, comp scrollPane:::p:266:p, space :p:12:p, par l {comp label1:::p::p, seq l {space :9:9:p, comp backToMainFrameButton:::p::p}}, space :p:29:p}}"
+				} ) {
+					name: "contentPanel"
+					auxiliary() {
+						"JavaCodeGenerator.postCreateCode": "\ncontenttable = new JTable(tableModel);"
+					}
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "clearButton"
+						"text": "清除数据"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clear", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "choicecomboBox"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "按地区查询学校"
+							addElement( "按地区查询学校" )
+							addElement( "按类型查询学校" )
+							addElement( "按名称查询学校" )
+							addElement( "模糊查询学校" )
+							addElement( "按名称查询学校专业课" )
+							addElement( "模糊查询学校专业课" )
+							addElement( "按用户名查询用户" )
+							addElement( "查询所有用户" )
+							addElement( "模糊查询用户" )
+							addElement( "按用户名查询管理员" )
+							addElement( "查询所有管理员" )
+							addElement( "模糊查询管理员" )
+						}
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "searchbutton"
+						"text": "查询"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						auxiliary() {
+							"JavaCodeGenerator.postCreateCode": "contenttable = new JTable(tableModel);"
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "search", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "backToMainFrameButton"
+						"text": "返回主界面"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backToMainFrame", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "这里是提示信息"
+						"horizontalAlignment": 0
+						"foreground": sfield java.awt.Color red
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "searchTextArea"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+						addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "searchTextAreaKeyReleased", true ) )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "contenttable"
+							auxiliary() {
+								"JavaCodeGenerator.postCreateCode": "contenttable = new JTable(tableModel);"
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 875, 490 )
+		} )
+	}
+}

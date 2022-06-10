@@ -1,0 +1,223 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "管理学校信息"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :::p, comp contentpanel:::::x, space :::p}}"
+					"$verticalGroup": "par l {comp contentpanel::t:::x}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:67:p, par l {seq l {par l:::p {seq l {comp label96:::p:87:p, space :12:12:p, comp schoolTypetextField:::p:264:p, space :::p, comp label97:::p:112:p, space :::p, par l {comp politicsMinTextField:::p:264:p, comp textField97:::p:264:p}}, seq l {comp label89:::p:87:p, space :12:12:p, comp schoolNametextField:::p:264:p, space :::p, comp label98:::p:112:p, space :::p, comp politicsMeanTextField:::p:264:p}, seq l {comp label90:::p:87:p, space u:::p, comp allCourseMinTextField:::p:264:p, space :::p, comp label99:::p:112:p, space :::p, comp politicsMaxTextField:::p:264:p}, seq l {comp label91:::p:87:p, space :12:12:p, comp allCourseMeanTextField:::p:264:p, space :::p, comp label100:::p:112:p, space :::p, comp firstProfessionalMintextField:::p:264:p}, seq l {comp label92:::p:87:p, space :12:12:p, comp allCourseMaxTextField:::p:264:p, space :::p, comp label101:::p:112:p, space :::p, comp firstProfessionalMeantextField:::p:264:p}, seq l {comp label93:::p:87:p, space :12:12:p, comp englishMinTextField:::p:264:p, space :::p, comp label102:::p:112:p, space :::p, comp firstProfessionalMaxtextField:::p:264:p}, seq l {comp label94:::p:87:p, space :12:12:p, comp englishMeanTextField:::p:264:p, space :::p, comp label103:::p:112:p, space :::p, comp secondProfessionalMinTextField:::p:264:p}, seq l {comp label95:::p:87:p, space :12:12:p, comp englishMaxTextField:::p:264:p, space :::p, comp label104:::p:112:p, space :::p, comp secondProfessionalMeanTextField:::p:264:p}, seq l {par t {seq t {comp findByNameButton:::p::p, space :31:31:p}, seq t {comp label106:::p:87:p, space :12:12:p, comp reExamNumberTextField:::p:264:p, space :::p, comp label105:::p:112:p, space :::p}}, comp secondProfessionalMaxTextField:::p:264:p}, comp tips::l:::x}, space ::59:x}, seq l {space :p:82:p, comp backToMainWindow:::p::p, space ::350:x, comp varribleInfoButton:::p::p, space :p:166:p}}}}"
+						"$verticalGroup": "par l {seq t {space :p:50:p, par l {comp label96:::p:29:p, comp schoolTypetextField:::p::p, comp politicsMinTextField:::p::p, comp textField97:::p::p, comp label97::l:p:29:p}, space :6:6:p, par l {comp label89:::p:29:p, comp schoolNametextField:::p::p, comp politicsMeanTextField:::p::p, comp label98::l:p:29:p}, par l {seq l {space :p:13:p, comp politicsMaxTextField:::p::p}, seq l {space u:::p, par b {comp allCourseMinTextField::b:p::p, comp label90::b:p:29:p, comp label99::b:p:29:p}}}, space :p:13:p, par l {comp label91:::p:29:p, comp allCourseMeanTextField:::p::p, comp firstProfessionalMintextField:::p::p, comp label100::l:p:29:p}, space :6:6:p, par l {comp firstProfessionalMeantextField:::p::p, seq l {space :5:5:p, par l {comp label92:::p:29:p, par b {comp allCourseMaxTextField::b:p::p, comp label101::b:p:29:p}}}}, space :7:7:p, par l {comp firstProfessionalMaxtextField:::p::p, seq l {space :5:5:p, par l {comp label93:::p:29:p, comp englishMinTextField:::p::p, comp label102::l:p:29:p}}}, space :12:12:p, par l {comp label94:::p:29:p, comp englishMeanTextField:::p::p, comp secondProfessionalMinTextField:::p::p, comp label103::l:p:29:p}, space :6:6:p, par l {comp secondProfessionalMeanTextField:::p::p, seq l {space :6:6:p, par l {comp label95:::p:29:p, comp englishMaxTextField:::p::p}}, comp label104::l:p:29:p}, space :6:6:p, par l {comp label106:::p:29:p, comp reExamNumberTextField:::p::p, seq l {space :1:1:p, comp secondProfessionalMaxTextField:::p::p}, comp label105::l:p:29:p}, space s:::p, comp tips:::p:34:p, space :p:8:p, par b {comp backToMainWindow::b:p::p, comp findByNameButton::b:p::p, comp varribleInfoButton::b:p::p}, space ::37:x}}"
+					} ) {
+						name: "contentpanel"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label89"
+							"text": "学校名称"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label90"
+							"text": "全科最低分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label91"
+							"text": "全科平均分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label92"
+							"text": "全科最高分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label93"
+							"text": "英语最低分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label94"
+							"text": "英语平均分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label95"
+							"text": "英语最高分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "schoolNametextField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "allCourseMeanTextField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "allCourseMaxTextField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "englishMinTextField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "englishMeanTextField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "englishMaxTextField"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "backToMainWindow"
+							"text": "返回主界面"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backToMainWindow", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label96"
+							"text": "学校类型"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "schoolTypetextField"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "varribleInfoButton"
+							"text": "确认修改"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "varribleInfo", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label97"
+							"text": "政治最低分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "politicsMinTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label98"
+							"text": "政治平均分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textField97"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label99"
+							"text": "政治最高分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "politicsMaxTextField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "politicsMeanTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label100"
+							"text": "专业课1最低分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label101"
+							"text": "专业课1平均分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label102"
+							"text": "专业课1最高分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "firstProfessionalMintextField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "firstProfessionalMeantextField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "firstProfessionalMaxtextField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "secondProfessionalMinTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label103"
+							"text": "专业课2最低分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label104"
+							"text": "专业课2平均分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "secondProfessionalMeanTextField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "secondProfessionalMaxTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label105"
+							"text": "专业课2最高分"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label106"
+							"text": "复试人数"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "reExamNumberTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tips"
+							"horizontalAlignment": 0
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 12 )
+							"foreground": sfield java.awt.Color red
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "allCourseMinTextField"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "findByNameButton"
+							"text": "按照名称查找"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "findByName", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 915, 590 )
+		} )
+	}
+}
